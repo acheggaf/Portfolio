@@ -72,6 +72,16 @@ body {
     z-index: 20000;
 }
 
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50%;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
 #mainSection {
     background-image: url('https://blog.digitalskola.com/wp-content/uploads/2021/09/emile-perron-xrVDYZRGdw4-unsplash-1-scaled.jpg');
     background-position: center;
