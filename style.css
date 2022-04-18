@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 140px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+#wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#mainSection {
+    background-image: url('https://blog.digitalskola.com/wp-content/uploads/2021/09/emile-perron-xrVDYZRGdw4-unsplash-1-scaled.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    min-height: fit-content;
+    image-rendering: optimizeQuality;
+    height: 940px;
+    background-attachment: fixed;
+}
+
+#navbar {
+    z-index: 200;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 80px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar li {
+    list-style: none;
+    padding: 10px 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 5px;
+    transition: 0.2s ease;
+}
+
+#navbar li a.active,
+#navbar li a:hover {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffbd2f;
+    transition: 0.2s ease;
+}
+
+@media screen and (max-width: 700px) {
+    #navbar {
+        z-index: 200;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 80px;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        height: fit-content;
+    }
+    #navbar li {
+        display: none;
+    }
+    .burger {
+        z-index: 220;
+        position: fixed;
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        top: 2px;
+    }
+    .burger div {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin-top: 5px;
+    }
+    .listCompetencs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2%;
+        justify-content: center;
+        text-align: center;
+    }
+    .iconCompetence {
+        list-style: none;
+        margin: 0px 20px;
+        margin-bottom: 2%;
+        font-size: 200%;
+        transition: 0.1s ease-in-out;
+    }
+    .iconCompetence:hover {
+        list-style: none;
+        margin: 5px 20px;
+        font-size: 40px;
+        color: #006d31;
+    }
+    #info li h4 {
+        color: #252525;
+        margin: 8px 0px;
+        font-size: 12px;
+    }
+    .projectTitle h3 {
+        font-size: 10px;
+    }
+}
+
+#hero {
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    left: 25%;
+}
+
+#typewriter {
+    position: relative;
+    top: -5%;
+    height: 100%;
+    width: fit-content;
+}
+
+#typewriter h6 {
+    position: relative;
+    top: 40%;
+    font-size: 55px;
+    color: whitesmoke;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+#buttonCV {
+    z-index: 20;
+    position: relative;
+    background-size: cover;
+    padding: 10px;
+    background-color: #000000;
+    margin-right: 30px;
+    top: 80%;
+    left: 50%;
+    width: fit-content;
+    transition: 0.2s ease;
+}
+
+#buttonCV:hover {
+    background-color: #006d31;
+}
+
+#buttonCV a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s ease;
+}
+
+#surmoi {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+#portrait {
+    position: relative;
+    margin-top: 2%;
+    margin-right: 1%;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+#imgportrait {
+    position: relative;
+    background-image: url('img/pt.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 2%;
+    width: 18vw;
+    height: 25vw;
+    min-width: 200px;
+    min-height: 400px;
+}
+
+#aboutMeText {
+    position: relative;
+    width: 20%;
+}
+
+.labelTag {
+    width: fit-content;
+    padding: 4px;
+    margin-bottom: 10px;
+    background-color: #ffbd2f;
+    color: rgb(255, 255, 255)
+}
+
+#tag h2 {
+    margin-bottom: 10px;
+}
+
+#competence {
+    position: relative;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+}
+
+.title h3 {
+    font-size: 30px;
+    margin-top: 2%;
+}
+
+.listCompetencs {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.iconCompetence {
+    list-style: none;
+    margin: 0px 20px;
+    margin-bottom: 2%;
+    font-size: 200%;
+    transition: 0.1s ease-in-out;
+}
+
+.iconCompetence:hover {
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 40px;
+    color: #006d31;
+}
+
+#info {
+    position: relative;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#info li {
+    list-style: none;
+    padding: 20px;
+    position: relative;
+    width: fit-content;
+    border: 3px solid rgba(24, 23, 18, 0.925);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+#info li h4 {
+    color: #252525;
+    margin: 8px 0px;
+}
+
+#project {
+    background-image: url('img/projet.jpeg');
+}
+
+#banner-wrraper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#banner-wrraper h2 {
+    position: relative;
+    top: 30%;
+    color: #ffffff;
+}
+
+.projectContainer {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.projectTitle {
+    text-align: center;
+}
+
+.projectContent {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 4%;
+    width: 450px;
+    height: 280px;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.projectTitle h3 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#halftime {
+    image-rendering: optimizeQuality;
+    background-image: url('img/ht.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vibrato {
+    image-rendering: optimizeQuality;
+    background-image: url('img/vib.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bitcrusher {
+    image-rendering: optimizeQuality;
+    background-image: url('img/bitc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contentWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 189, 47, 0.0);
+    transition: 0.2s ease-in-out;
+}
+
+.contentWrapper:hover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(221, 221, 221, 0.9);
+}
+
+.contentWrapper h4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding-top: 25%;
+    transition: 0.3s ease-in;
+}
+
+.content {
+    max-width: 95%;
+    image-rendering: optimizeQuality;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contentWrapper h4:hover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.contentWrapper a {
+    text-decoration: none;
+}
+
+#myPortfolio {
+    image-rendering: optimizeQuality;
+    background-image: url('img/myP.png');
+}
+
+#design {
+    background-image: url('img/design.jpg');
+}
+
+#hobbies {
+    background-image: url('img/piano.jpg');
+}
+
+.transitionDiv {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-attachment: fixed;
+}
+
+#room {
+    background-image: url('img/R.png');
+}
+
+#minim {
+    background-image: url('img/mini.png');
+}
+
+#_3d {
+    background-image: url('img/3d.png');
+}
+
+#contact {
+    background-image: url('img/contact.jpg');
+}
+
+#musique1 {
+    background-image: url('img/juice.jpg');
+}
+
+#musique2 {
+    background-image: url('img/ma.jpg');
+}
+
+#musique3 {
+    background-image: url('img/shoot.jpg');
+}
+
+.formcontainer {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.formcontainer-box {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.formcontainer-box h2 {
+    margin-top: 5%;
+}
+
+.formcontainer-box input {
+    width: 40%;
+    height: 40px;
+    margin-top: 2%;
+}
+
+.formcontainer-box textarea {
+    width: 40%;
+    height: 100px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.send {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    background-color: #000000;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.send:hover {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    background-color: #ffbd2f;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+
+.send h4 {
+    color: white;
+}
+
+.send h4:hover {
+    color: black;
+}
+
+.auteur {
+    position: relative;
+    text-align: center;
+    background-color: #000000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.auteur h6 {
+    color: white;
+}
+
+#model1 {
+    background-image: url('img/r2.jpg');
+}
+
+#model2 {
+    background-image: url('img/r2.jpg');
+}
+
+.send a {
+    text-decoration: none;
+}

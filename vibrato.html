@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Auteur : Ahmed CHEGGAF SAYAD
+-->
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="contentstyle.css">
+    <link rel="icon" type="image/x-icon" href="/img/portfolio.ico">
+    <title>Ahmed CHEGGAF SAYAD</title>
+</head>
+
+<body>
+    <div id="mainSection">
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Ahmed CHEGGAF SAYAD</a></li>
+                <div id="burgerDiv" class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+            </ul>
+        </div>
+        <div id="wrapper" class="vb">
+            <div id="hero">
+                <h2>Vibrato Effect</h2>
+                <div class="date">
+                    <i class="far fa-calendar"></i>
+                    <h3>11/05/2021</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="pageContent">
+            <h2>Presentation</h2>
+            <div id="content">
+                <p>
+                    Pour une meilleur explication vaut mieux regarder la vidéo en bas.
+
+                </p>
+                <p>
+                    <h3>Explication du logiciel</h3>
+                    Ce logiciel est un VST (Virtual Studio Technology : un plugin audio qui permet soit de générer du son tel que des pianos, des guitares ou des synths virtuelles, ou bien dans mon cas traiter le son pour donner un effet spécial). Ce projet a été developpé
+                    en C++ avec une framework qui s'appelle <a href="https://juce.com/" target="_blank">JUCE</a> (similaire a Qt).
+
+                </p>
+                <p>
+                    Pour implémenter cet effet je me suis inspiré de l'effet Doppler (le décalage Doppler est le changement de fréquence d'une onde par rapport à un observateur qui se déplace par rapport à la source d'onde). Ici, j'ai utilisé trois idées principales, un
+                    tampon de retard et deux indices qui étaient un pointeur d'écriture qui indique où le signal d'entrée est stocké et l'index de lecture qui oscille entre le writeIndex et le writeIndex-LFOValue. Pour simplifier cette explication, vous
+                    pouvez penser à cet effet comme si l'index d'écriture était la source et l'index de lecture était l'observateur se déplaçant à la vitesse choisie par la fréquence du LFO.
+                </p>
+
+
+
+
+                <img src="img/Waves Original.png" width="400px">
+                <div class="to">
+                    <h3>Vers</h3>
+                </div>
+                <img src="img/Result.png" width="400px">
+
+                <p>
+                    J'ai égalemnt intégré un effet additionel qui représente un chorus. Cet effet est représenté par l'amplificateur de guitar qui se trouve au milieu de la page. La modélisation 3D que j'ai fait a été inspiré par un amplificateur de guitar de la part de
+                    chez Yamaha.
+                </p>
+
+                <div class="imgHolder">
+                    <img src="img/yamaha.jpg">
+
+                    <img src="img/Ampl.jpg">
+                </div>
+
+
+                <p>
+                    Dans cet vidéo j'explique et je montre l'effet sur un son.
+                </p>
+                <video id="videoPresentation" controls="" height="580" width="840">
+                    <source src="https://www.dropbox.com/s/pm6szc3aaea8lvn/HalfTime.mp4?raw=1" type="video/mp4"></source>
+               </video>
+
+            </div>
+            <h2>Pérformance</h2>
+            <div id="content">
+                <p>
+                    Ce plugin est très perfermant en terms d'usage de CPU car même s'il utilise l'interpolation cubique qui nécessite la résolution Ax = b ou A est une matrice tridiagonale, cette résolution a été fait en un temps linèaire car j'ai utilisé
+                    <a href="https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm" target="_blank">l'algorithme de Thomas</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
