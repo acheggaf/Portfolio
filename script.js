@@ -86,7 +86,6 @@ function resizeAboutMe(width) {
     changeSize = false;
     if (width < 700) changeSize = true;
     var temp = document.getElementById('imgportrait');
-    console.log(temp);
     if (changeSize && temp != null) {
         temp.remove();
         aboutMe.style.width = '100%';
