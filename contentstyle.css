@@ -192,6 +192,10 @@ body {
         background-color: white;
         margin-top: 5px;
     }
+    .pageContent h2 {
+        margin-top: 4%;
+        font-size: 30px;
+    }
 }
 
 .pageContent {
