@@ -637,3 +637,21 @@ body {
 .send a {
     text-decoration: none;
 }
+
+.iconCompetence2 {
+    list-style: none;
+    margin: 0px 10px;
+    margin-bottom: 2%;
+    font-size: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+.iconCompetence2:hover {
+    list-style: none;
+    font-size: 110%;
+    color: #ffe96e;
+}
