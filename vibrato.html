@@ -6,6 +6,7 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <div id="mainSection">
         <div>
             <ul id="navbar">
@@ -58,7 +62,7 @@
                     pouvez penser à cet effet comme si l'index d'écriture était la source et l'index de lecture était l'observateur se déplaçant à la vitesse choisie par la fréquence du LFO.
                 </p>
 
-                <div>
+                <div class="imgHolder">
                     <img src="img/Vibrato.png"> </div>
                 <p>
                     <ul>
@@ -90,7 +94,14 @@
         </div>
     </div>
 
-
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").css({
+                "overflow": "visible"
+            });
+        });
+    </script>
 </body>
 
 </html>

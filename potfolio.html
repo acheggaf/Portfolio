@@ -6,6 +6,7 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <div id="mainSection">
         <div>
             <ul id="navbar">
@@ -44,25 +48,23 @@
             <h2>Presentation</h2>
             <div id="content">
                 <p>
-                    As we can see in the next two figures, the effect takes half a bar and stretches it out to a hole bar. And if the selected parameter was 1/2 then the plugin will stretch 1/4 of a bar to 1/2 of a bar and so on.
+                    J'ai développé mon e-portfolio en utilisant HTML, CSSet JAVASCRIPT (JQuery). J'ai fait en sorte que mon site soit responsive ce qui veut dire que mon e-portfolio s'adapte a la taille de la fentre du navigateur. Grâce a ceci mon site posséde deux versions,
+                    une version desktop et une autre pour les téléphones.
                 </p>
-                <img src="img/Waves Original.png">
-                <div class="to">
-                    <h3>To</h3>
-                </div>
-                <img src="img/Result.png">
-                <p>
-                    In the next video I present my HalfTime plugin, during the presentation I explain the effect and the functionalities of each parameter.
-                </p>
-                <video id="videoPresentation" controls="" height="580" width="840">
-                    <source src="https://www.dropbox.com/s/pm6szc3aaea8lvn/HalfTime.mp4?raw=1" type="video/mp4"></source>
-               </video>
+
 
             </div>
         </div>
     </div>
 
-
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").css({
+                "overflow": "visible"
+            });
+        });
+    </script>
 </body>
 
 </html>

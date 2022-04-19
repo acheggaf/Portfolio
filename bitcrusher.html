@@ -6,6 +6,7 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <div id="mainSection">
         <div>
             <ul id="navbar">
@@ -57,7 +61,7 @@
                     cet effet audio produit une distorsion en réduisant la résolution ou la bande passante des données audio numériques. Le bruit de quantification résultant peut produire une impression sonore "plus chaude", ou plus dure, selon le degré de réduction.
                 </p>
 
-                <div>
+                <div class="imgHolder">
                     <img src="img/bitcrush.png">
                 </div>
 
@@ -69,7 +73,14 @@
 
         </div>
     </div>
-
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").css({
+                "overflow": "visible"
+            });
+        });
+    </script>
 
 </body>
 

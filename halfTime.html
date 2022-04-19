@@ -6,6 +6,7 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <div id="mainSection">
         <div>
             <ul id="navbar">
@@ -57,16 +61,21 @@
                     Cet effet prend la moitié d'une mesure de son et en utilisant l'interpolation cubique l'étire en une mesure entière, ceci résulte en une modification du pitch qui est baissé d'une octave. Ce logiciel possède plusieurs paramètres qui représente la taille
                     de la mesure (la moitié, un quart, un huitième ... d'une mesure), plus le paramètre est petit plus le son est plus dynamique.
                 </p>
-                <div>
+                <div class="imgHolder">
                     <img src="img/UIht.png">
                 </div>
 
+                <div class="imgHolder">
+                    <img src="img/Waves Original.png" width="400px">
+                </div>
 
-                <img src="img/Waves Original.png" width="400px">
                 <div class="to">
                     <h3>Vers</h3>
                 </div>
-                <img src="img/Result.png" width="400px">
+                <div class="imgHolder">
+                    <img src="img/Result.png" width="400px">
+                </div>
+
 
                 <p>
                     J'ai égalemnt intégré un effet additionel qui représente un chorus. Cet effet est représenté par l'amplificateur de guitar qui se trouve au milieu de la page. La modélisation 3D que j'ai fait a été inspiré par un amplificateur de guitar de la part de
@@ -98,7 +107,14 @@
         </div>
     </div>
 
-
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").css({
+                "overflow": "visible"
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <div id="mainSection">
         <div>
             <ul id="navbar">
@@ -48,13 +52,13 @@
                     Et grâce a la framewrok JUCE que j'utilise pour développer du logiciel je suis capable d'avoir une très grande libérté sur la conception de l'interface graphique de mes projets. Dans mon projet <a href="vibrato.html"
                         target="_blanc">Vibrato Effect</a> j'ai décidé d'utiliser un style minimalist et de représenter les paramètres avec des formes abstraites avec des effets spécials.
                 </p>
-                <div>
+                <div class="imgHolder">
                     <img src="img/Vibrato.png">
                 </div>
                 <p>
                     Dans ce type de design le choix de couleur est trés important car il ne faut pas avoir énormément de couleur, de préférence deux ou trois maximums.
                 </p>
-                <div>
+                <div class="imgHolder">
                     <img src="img/UIht.png">
                 </div>
                 <p>
@@ -65,7 +69,14 @@
         </div>
     </div>
 
-
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").css({
+                "overflow": "visible"
+            });
+        });
+    </script>
 </body>
 
 </html>
