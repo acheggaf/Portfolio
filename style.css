@@ -169,21 +169,24 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+    
     #navbar {
         z-index: 200;
+        
         width: 100%;
         position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px 80px;
         background-color: rgba(0, 0, 0, 0.1);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
         height: fit-content;
+        min-height: 50px;
     }
     #navbar li {
         display: none;
+        margin-top: 4px;
     }
     .burger {
         z-index: 220;
@@ -192,7 +195,7 @@ body {
         height: fit-content;
         margin-left: auto;
         margin-right: auto;
-        top: 2px;
+        top: 8px;
     }
     .burger div {
         height: 3px;
@@ -265,6 +268,7 @@ body {
     margin-right: 30px;
     top: 80%;
     left: 50%;
+    transform: translate(-50%,0%);
     width: fit-content;
     transition: 0.2s ease;
 }
