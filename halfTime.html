@@ -48,7 +48,7 @@
             <h2>Presentation</h2>
             <div id="content">
                 <p>
-                    Pour une meilleur explication vaut mieux regarder la vidéo en bas.
+                    Pour une présentation pratique vaut mieux regarder la vidéo en bas (qui est en anglais).
 
                 </p>
                 <p>
@@ -78,7 +78,7 @@
 
 
                 <p>
-                    J'ai égalemnt intégré un effet additionel qui représente un chorus. Cet effet est représenté par l'amplificateur de guitar qui se trouve au milieu de la page. La modélisation 3D que j'ai fait a été inspiré par un amplificateur de guitar de la part de
+                    J'ai égalemnt intégré un effet additionel qui représente un chorus. Cet effet est représenté par l'amplificateur de guitar qui se trouve au milieu de la page. La modélisation 3D que j'ai faite a été inspiré par un amplificateur de guitar de la part de
                     chez Yamaha.
                 </p>
 
@@ -88,33 +88,40 @@
                     <img src="img/Ampl.jpg">
                 </div>
 
-
-                <p>
-                    Dans cet vidéo j'explique et je montre l'effet sur un son.
-                </p>
-                <video id="videoPresentation" controls="" height="580" width="840">
-                    <source src="https://www.dropbox.com/s/pm6szc3aaea8lvn/HalfTime.mp4?raw=1" type="video/mp4"></source>
-               </video>
-
             </div>
             <h2>Pérformance</h2>
             <div id="content">
                 <p>
-                    Ce plugin est très perfermant en terms d'usage de CPU car même s'il utilise l'interpolation cubique qui nécessite la résolution Ax = b ou A est une matrice tridiagonale, cette résolution a été fait en un temps linèaire car j'ai utilisé
+                    Ce plugin est très perfermant en terms d'usage de CPU car même s'il utilise l'interpolation cubique qui nécessite la résolution d'un système lineaire tel que Ax = b ou A est une matrice tridiagonale, cette résolution a été fait en un temps linèaire car
+                    j'ai utilisé
                     <a href="https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm" target="_blank">l'algorithme de Thomas</a>.
                 </p>
+                <h4>Interpolation cubique optimisé plus en detail :</h4>
+                <div class="imgHolder">
+                    <img src="img/Cubicetude1.JPG">
+                    <img src="img/Cubicetude2.JPG">
+                    <img src="img/cubicsplinecode.png" class="imgCode">
+                </div>
+                <div id="content">
+                    <h4>Démostration de l'effet sur une mélodie</h4>
+                    <p>
+                        Dans cet vidéo j'explique et je montre l'effet sur un son.
+                    </p>
+                    <video id="videoPresentation" controls="" height="580" width="840">
+                    <source src="https://www.dropbox.com/s/pm6szc3aaea8lvn/HalfTime.mp4?raw=1" type="video/mp4"></source>
+               </video>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        $(window).on("load", function() {
-            $(".loader-wrapper").fadeOut("slow");
-            $("body").css({
-                "overflow": "visible"
+        <script>
+            $(window).on("load", function() {
+                $(".loader-wrapper").fadeOut("slow");
+                $("body").css({
+                    "overflow": "visible"
+                });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
