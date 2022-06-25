@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Auteur : Ahmed CHEGGAF SAYAD
+-->
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="contentstyle.css">
+    <link rel="icon" type="image/x-icon" href="/img/portfolio.ico">
+    <title>Mon protfolio</title>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div id="mainSection">
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Ahmed CHEGGAF SAYAD</a></li>
+                <div id="burgerDiv" class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+            </ul>
+        </div>
+        <div id="wrapper" class="mp">
+            <div id="hero">
+                <h2>Projet Ecommerce / E-portfolio (Projet en groupe)</h2>
+                <div class="date">
+                    <i class="far fa-calendar"></i>
+                    <h3>25/03/2022</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pageContent">
+            <h2>Presentation</h2>
+            <div id="content">
+                <p>
+                    Dans une équipe de 4 étduiants nous avons développé un site web qui permet à une artiste de montrer ses ouvres et d'avoir la possibilité de les vendre. Nous avons utilisé le modèle MVC (modèle vue controlleur) pour construire le site. Pour ce qui concerne
+                    le front-end nous avons fait usage de HTML5, CSS et jQuery. Pour ce qui concerne le back-end nous avons utilisé des servlets java dans un serveur Apache. Ma mission principale était de travailé sur le front-end, m ais aprés avoir fini
+                    avec ça j'ai travaillé sur la création de plusieurs servlets.
+
+                    <div class="imgHolder">
+                        <img src="img/f1.png">
+                        <div class="to">
+                            <h3>Version desktop</h3>
+                        </div>
+                    </div>
+
+                    <div class="imgHolder">
+                        <img src="img/vue1.png">
+                        <div class="to">
+                            <h3>Vue des oeuvres</h3>
+                        </div>
+                    </div>
+                    <div class="imgHolder">
+                        <img src="img/vue2.png">
+                        <div class="to">
+                            <h3>Vue en détail</h3>
+                        </div>
+                    </div>
+                    <div class="imgHolder">
+                        <img src="img/achat1.png">
+                        <div class="to">
+                            <h3>Achat d'une oeuvre</h3>
+                        </div>
+                    </div>
+
+
+                </p>
+
+
+            </div>
+
+            <h2>Admin</h2>
+            <div id="content">
+                <div class="imgHolder">
+                    <img src="img/admin.png">
+                    <div class="to">
+                        <h3>Version mobile</h3>
+                    </div>
+                </div>
+                <p>
+                    Dans notre site nous avons introduit un ensmeble de droit d'entrée admin, client et guest (utilisateur sans compte). l'admin possède des droits qui lui permet de pouvoir publier et de gèrer avec liberté tous les aspects du site.
+                </p>
+            </div>
+
+            <h2>Slider</h2>
+            <div id="content">
+                <p>
+                    Le Slider a été constuit en mettant plusieurs images (récupérées dynamiquement depuis une BD) les une sur les autres et en utilisant CSS, seulement l’image qui fait partie de la classe "active" 2 aura une opacité de 1 (les autres 0), et avec un timer
+                    dans Javascript on défile l’option class "active" sur l’ensemble des images. On a également ajouter l’option de pouvoir changer d’image à partir d’un ensemble de cercle qui indique la position actuelle parmi le reste
+                </p>
+            </div>
+
+
+            <h2>Responsive</h2>
+            <div id="content">
+                <div class="imgHolder">
+                    <img src="img/f2.png">
+                    <div class="to">
+                        <h3>Version mobil</h3>
+                    </div>
+                </div>
+                <p>
+                    Nous avons pris le temps de rendre notre site responsive (grace a un melange de CSS et Javascript) ce qui veut dire que les smartphones auront une version qui va faciliter la navigation, nous avons fait cela en cachant la navbar dans un menu qui se défile
+                    lorsque l’utilisateur clique sur un button. Nous avons aussi adapté la taille du text en utilisant CSS pour conserver des dimensions correctes.
+                </p>
+            </div>
+
+            <h2>Base de données</h2>
+            <div id="content">
+                <div class="imgHolder">
+                    <img src="img/BDD.png">
+                    <div class="to">
+                        <h3>Version desktop</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").css({
+                "overflow": "visible"
+            });
+        });
+    </script>
+</body>
+
+</html>

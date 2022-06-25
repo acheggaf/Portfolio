@@ -169,10 +169,8 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-    
     #navbar {
         z-index: 200;
-        
         width: 100%;
         position: fixed;
         display: flex;
@@ -268,7 +266,7 @@ body {
     margin-right: 30px;
     top: 80%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     width: fit-content;
     transition: 0.2s ease;
 }
@@ -360,7 +358,6 @@ body {
     font-size: 200%;
     transition: 0.1s ease-in-out;
 }
-
 
 .iconCompetence:hover {
     list-style: none;
@@ -504,6 +501,11 @@ body {
 #myPortfolio {
     image-rendering: optimizeQuality;
     background-image: url('img/myP.png');
+}
+
+#commerce {
+    image-rendering: optimizeQuality;
+    background-image: url('img/f1.png');
 }
 
 #design {
