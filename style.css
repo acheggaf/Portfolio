@@ -436,14 +436,14 @@ body {
 
 #halftime {
     image-rendering: optimizeQuality;
-    background-image: url('img/ht.png');
+    background-image: url('img/BannerHalftime.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #vibrato {
     image-rendering: optimizeQuality;
-    background-image: url('img/vib.jpg');
+    background-image: url('img/BannerTape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
